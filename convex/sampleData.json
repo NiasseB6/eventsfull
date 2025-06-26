@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Chris Brown Concert",
+    "description": " experience one",
+    "price": 449,
+    "totalTickets": 100,
+    "location": "NEW YORK",
+    "eventDate": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "name": "Taylor Swift Concert",
+    "description": " experience two",
+    "price": 499,
+    "totalTickets": 100,
+    "location": "LOS ANGELES",
+    "eventDate": "2024-02-01T00:00:00.000Z"
+  },
+  {
+    "name": "Ed Sheeran Concert",
+    "description": " experience three",
+    "price": 399,
+    "totalTickets": 100,
+    "location": "CHICAGO",
+    "eventDate": "2024-03-01T00:00:00.000Z"
+  }
+]
