@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link"; // ✅ Corrigé ici
+import Link from "next/link"; 
 import Image from "next/image";
 import logo from "../public/logo.png";
 import {
@@ -12,8 +12,10 @@ import {
 } from "@clerk/clerk-react";
 import SearchBar from "./SearchBar";
 
+
 function Header() {
   return (
+    // le Header 
     <div className="border-b justify-center">
       <div className=" flex flex-col lg:flex-row items-center gap-4 p-4">
         <div className="flex items-center justify-between w-full lg:w-auto">

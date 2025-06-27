@@ -2,25 +2,46 @@
   {
     "name": "Chris Brown Concert",
     "description": " experience one",
+    "eventDate": 20240101000000000,
+    "location": "NEW YORK",
     "price": 449,
     "totalTickets": 100,
+    "userId":"user_2bFMHKGxZPWKDICNJN"
+  },
+  {
+    "name": "Chris Brown Concert",
+    "description": " experience one",
+    "eventDate": 20240101000000000,
     "location": "NEW YORK",
-    "eventDate": "2024-01-01T00:00:00.000Z"
+    "price": 449,
+    "totalTickets": 100,
+    "userId":"user_2bFMHKGxZPWKDICNJN"
   },
   {
-    "name": "Taylor Swift Concert",
-    "description": " experience two",
-    "price": 499,
+    "name": "Chris Brown Concert",
+    "description": " experience one",
+    "eventDate": 20240101000000000,
+    "location": "NEW YORK",
+    "price": 449,
     "totalTickets": 100,
-    "location": "LOS ANGELES",
-    "eventDate": "2024-02-01T00:00:00.000Z"
+    "userId":"user_2bFMHKGxZPWKDICNJN"
   },
   {
-    "name": "Ed Sheeran Concert",
-    "description": " experience three",
-    "price": 399,
+    "name": "Chris Brown Concert",
+    "description": " experience one",
+    "eventDate": 20240101000000000,
+    "location": "NEW YORK",
+    "price": 449,
     "totalTickets": 100,
-    "location": "CHICAGO",
-    "eventDate": "2024-03-01T00:00:00.000Z"
+    "userId":"user_2bFMHKGxZPWKDICNJN"
+  },
+  {
+    "name": "Chris Brown Concert",
+    "description": " experience one",
+    "eventDate": 20240101000000.000,
+    "location": "NEW YORK",
+    "price": 449,
+    "totalTickets": 100,
+    "userId":"user_2bFMHKGxZPWKDICNJN"
   }
 ]
