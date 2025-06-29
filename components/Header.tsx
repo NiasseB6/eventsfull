@@ -61,7 +61,7 @@ function Header() {
           </SignedOut>
           <SignedIn>
             <div className="flex items-center gap-3">
-              <Link href="/vendeurs">
+              <Link href="/seller">
                 <button
                   className="bg-[#184C99] text-white px-3 py-1.5 text-sm rounded-lg hover:bg-blue-700
               trasition"
@@ -85,7 +85,7 @@ function Header() {
         {/* Ecran pour mobile */}
         <div className="lg:hidden w-full flex justify-center gap-3">
           <SignedIn>
-              <Link href="/vendeurs" className="flex-1">
+              <Link href="/seller" className="flex-1">
                 <button
                   className=" w-full bg-[#184C99] text-white px-3 py-1.5 text-sm rounded-lg hover:bg-blue-700 transition"
                 >
