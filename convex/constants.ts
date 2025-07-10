@@ -1,7 +1,7 @@
 import { CANCELLED } from "dns";
 import { Doc } from "./_generated/dataModel"
 
-export const DURATION = {
+export const DURATIONS = {
   TICKET_OFFER: 30 * 60 * 1000, // 30 minutes pour payer la reservation
 } as const;
 
