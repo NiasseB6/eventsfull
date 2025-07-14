@@ -67,7 +67,7 @@ function EventPage() {
                 <div className="grid grid-cols-2 gap-6">
                   <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
                     <div className="flex items-center text-gray-600 mb-1">
-                      <CalendarDays className="w-5 h-5 mr-2 text-blue-600"/>
+                      <CalendarDays className="w-5 h-5 mr-2 text-[#184C99]"/>
                       <span className="text-sm font-medium">Date</span>
                     </div>
                     <p className="text-gray-900">
@@ -78,7 +78,7 @@ function EventPage() {
                   {/* Localisation */}
                   <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
                     <div className="flex items-center text-gray-600 mb-1">
-                      <MapPin className="w-5 h-5 text-blue-600"/>
+                      <MapPin className="w-5 h-5 text-[#184C99]"/>
                       <span className="text-sm font-medium"> Lieu</span>
                     </div>
                     <p className="text-gray-900">{event.location}</p>
@@ -87,7 +87,7 @@ function EventPage() {
                   {/* Le prix du ticket */}
                 <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
                   <div className="flex items-center text-gray-600 mb-1">
-                    <Ticket className="w-5 h-5 mr-2 text-blue-600"/>
+                    <Ticket className="w-5 h-5 mr-2 text-[#184C99]"/>
                     <span className="text-sm font-medium">Prix</span>
                   </div>
                   <p className="text-gray-900">{event.price.toFixed(2)} FCFA</p>
@@ -96,13 +96,13 @@ function EventPage() {
                 {/* L'utilisateur du ticket */}
                 <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
                   <div className="flex items-center text-gray-600 mb-1">
-                    <Users className="w-5 h-5 mr-2 text-blue-600"/>
+                    <Users className="w-5 h-5 mr-2 text-[#184C99]"/>
                     <span className="text-sm font-medium">Disponible</span>
                   </div>
                   <p className="text-gray-900">
                     {availability.totalTickets - availability.purchasedCount}
                     {" "}
-                    / {availability.totalTickets} reste
+                    / {availability.totalTickets} restant
                   </p>
                 </div>
                 </div>

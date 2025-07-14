@@ -102,7 +102,7 @@ function PurchaseTicket({ eventId }: { eventId: Id<"events"> }) {
       >
         {isLoading
         ? "Achat en cours..."
-        : "Reserve ton ticket maintenant "
+        : "Reserve ton ticket maintenant 👉 "
         }
       </button>
 
