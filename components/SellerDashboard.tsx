@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 import Spinner from "./Spinner";
 import { Calendar, Cog, Plus } from "lucide-react";
 import { createStripeConnectCustomer } from "@/actions/createStripeConnectCustomer";
-import { createStripeConnectAccountLink } from "@/actions/getStripeConnectAccountLink";
+import { createStripeConnectAccountLink } from "@/actions/createStripeConnectAccountLink";
 import Link from "next/link";
 
 function SellerDashboard() {
