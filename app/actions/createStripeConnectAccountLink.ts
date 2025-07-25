@@ -1,7 +1,6 @@
 "use server";
 
 import { stripe } from "@/lib/stripe";
-import { url } from "inspector";
 import { headers } from "next/headers";
 
 export async function createStripeConnectAccountLink(account: string) {

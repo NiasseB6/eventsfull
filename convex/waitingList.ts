@@ -1,3 +1,4 @@
+
 import { internalMutation, mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import { DURATIONS, TICKET_STATUS, WAITING_LIST_STATUS } from "./constants";
