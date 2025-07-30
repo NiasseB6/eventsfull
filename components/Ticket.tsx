@@ -90,7 +90,7 @@ export default function Ticket({ ticketId }: { ticketId: Id<"tickets"> }) {
                 className={`w-5 h-5 mr-3 ${ticket.event.is_canceled ? "text-red-600" : "text-blue-600"}`}
               />
               <div>
-                <p className="text-sm text-gray-500">Ticket Holder</p>
+                <p className="text-sm text-gray-500">Vendeur du billet</p>
                 <p className="font-medium">{user.name}</p>
                 <p className="text-sm text-gray-500">{user.email}</p>
               </div>
@@ -101,7 +101,7 @@ export default function Ticket({ ticketId }: { ticketId: Id<"tickets"> }) {
                 className={`w-5 h-5 mr-3 ${ticket.event.is_canceled ? "text-red-600" : "text-blue-600"}`}
               />
               <div>
-                <p className="text-sm text-gray-500">Ticket Holder ID</p>
+                <p className="text-sm text-gray-500">ID du proprietaire</p>
                 <p className="font-medium">{user.userId}</p>
               </div>
             </div>
@@ -111,8 +111,8 @@ export default function Ticket({ ticketId }: { ticketId: Id<"tickets"> }) {
                 className={`w-5 h-5 mr-3 ${ticket.event.is_canceled ? "text-red-600" : "text-blue-600"}`}
               />
               <div>
-                <p className="text-sm text-gray-500">Ticket Price</p>
-                <p className="font-medium">£{ticket.event.price.toFixed(2)}</p>
+                <p className="text-sm text-gray-500">Prix du billet</p>
+                <p className="font-medium">{ticket.event.price.toFixed(2)} FCFA</p>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function Ticket({ ticketId }: { ticketId: Id<"tickets"> }) {
               <QRCode value={ticket._id} className="w-32 h-32" />
             </div>
             <p className="mt-2 text-sm text-gray-500 break-all text-center max-w-[200px] md:max-w-full">
-              Ticket ID: {ticket._id}
+              Billet ID: {ticket._id}
             </p>
           </div>
         </div>
@@ -133,7 +133,7 @@ export default function Ticket({ ticketId }: { ticketId: Id<"tickets"> }) {
         {/* Additional Information */}
         <div className="mt-6 pt-6 border-t border-gray-200">
           <h3 className="text-sm font-medium text-gray-900 mb-2">
-            Important Information
+            Information Importante
           </h3>
           {ticket.event.is_canceled ? (
             <p className="text-sm text-red-600">
@@ -142,9 +142,9 @@ export default function Ticket({ ticketId }: { ticketId: Id<"tickets"> }) {
             </p>
           ) : (
             <ul className="text-sm text-gray-600 space-y-1">
-              <li>• Please arrive at least 30 minutes before the event</li>
-              <li>• Have your ticket QR code ready for scanning</li>
-              <li>• This ticket is non-transferable</li>
+              <li>• Venez 30 minutes avant que l'évènement ne commence</li>
+              <li>• Ayez votre code QR de billet prêt pour le scan.</li>
+              <li>• Ce billet est non transférable.</li>
             </ul>
           )}
         </div>
@@ -155,7 +155,7 @@ export default function Ticket({ ticketId }: { ticketId: Id<"tickets"> }) {
         className={`${ticket.event.is_canceled ? "bg-red-50" : "bg-gray-50"} px-6 py-4 flex justify-between items-center`}
       >
         <span className="text-sm text-gray-500">
-          Purchase Date: {new Date(ticket.purchasedAt).toLocaleString()}
+          Date d'achat: {new Date(ticket.purchasedAt).toLocaleString()}
         </span>
         <span
           className={`text-sm font-medium ${ticket.event.is_canceled ? "text-red-600" : "text-blue-600"}`}

@@ -54,7 +54,7 @@ function EventCard({ eventId }: { eventId: Id<"events"> }) {
         <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg border border-gray-200">
           <div className="flex items-center">
             <Ticket className="w-5 h-5 text-gray-400 mr-2" />
-            <span className="text-gray-600">Event is sold Out</span>
+            <span className="text-gray-600">l'évènement est sold Out</span>
           </div>
         </div>
       );
@@ -75,7 +75,7 @@ function EventCard({ eventId }: { eventId: Id<"events"> }) {
           </div>
           <div className="flex items-center">
             <LoaderCircle className="w-4 h-4 mr-1 animate-spin text-amber-500" />
-            <span className="text-amber-600 text-sm">En attente de ticket</span>
+            <span className="text-amber-600 text-sm">En attente de billets</span>
           </div>
         </div>
       );
@@ -109,7 +109,7 @@ function EventCard({ eventId }: { eventId: Id<"events"> }) {
           font-medium hover:bg-gray-200 transition-colors duration-200 shadow-sm flex items-center justify-center gap-2"
           >
             <PencilIcon className="w-5 h-5" />
-            Modifier l'evenement
+            Modifier l'évènement
           </button>
         </div>
       );
@@ -121,7 +121,7 @@ function EventCard({ eventId }: { eventId: Id<"events"> }) {
           <div className="flex items-center">
             <Check className="w-5 h-5 text-green-600 mr-2" />
             <span className="text-green-700 font-medium">
-              Vous avez votre ticket!
+              Vous avez votre billets!
             </span>
           </div>
           <button
@@ -129,7 +129,7 @@ function EventCard({ eventId }: { eventId: Id<"events"> }) {
             className="text-sm bg-green-600 hover:bg-green-700 text-white px-1.5 rounded-full 
           font-medium shadow-sm transition-colors duration-200 flex items-center gap-1"
           >
-            Voir votre ticket
+            Voir vos billets
           </button>
         </div>
       );

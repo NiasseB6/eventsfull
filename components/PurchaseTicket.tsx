@@ -98,7 +98,7 @@ function PurchaseTicket({ eventId }: { eventId: Id<"events"> }) {
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-900">
-                Ticket Réservé
+                Billet Réservé
               </h3>
               <p className="text-sm text-gray-500">
                 Expire dans {timeRemaining}
@@ -107,7 +107,7 @@ function PurchaseTicket({ eventId }: { eventId: Id<"events"> }) {
           </div>
 
           <div className="text-sm text-gray-600 leading-relaxed">
-            Vous avez réserver le ticket. Complèter votre achat avant l'expiration pour assurer votre place. 
+            Vous avez réserver le billet. Complèter votre achat avant l'expiration pour assurer votre place. 
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@ function PurchaseTicket({ eventId }: { eventId: Id<"events"> }) {
       >
         {isLoading
         ? "Achat en cours..."
-        : "Reserve ton ticket maintenant 👉 "
+        : "Reserve ton billet maintenant 👉 "
         }
       </button>
 

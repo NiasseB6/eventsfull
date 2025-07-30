@@ -66,12 +66,12 @@ export async function createStripeCheckoutSession({
       line_items: [
         {
           price_data: {
-            currency: "gbp",
+            currency: "xof",
             product_data: {
               name: event.name,
               description: event.description,
             },
-            unit_amount: Math.round(event.price * 100),
+            unit_amount: Math.round(event.price * 1),
           },
           quantity: 1,
         },

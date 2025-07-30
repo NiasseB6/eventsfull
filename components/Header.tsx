@@ -66,7 +66,7 @@ function Header() {
                   className="bg-[#184C99] text-white px-3 py-1.5 text-sm rounded-lg hover:bg-blue-700
               trasition"
                 >
-                  Vendeurs
+                  Vendeur
                 </button>
               </Link>
               <Link href="/tickets">
@@ -74,7 +74,7 @@ function Header() {
                   className="bg-[#F37021] text-gray-800 px-3 py-1.5 text-sm
               rounded-lg hover:bg-gray-200 transition border border-gray-300"
                 >
-                  Billets
+                 Mes Billets
                 </button>
               </Link>
               <UserButton />
@@ -89,7 +89,7 @@ function Header() {
                 <button
                   className=" w-full bg-[#184C99] text-white px-3 py-1.5 text-sm rounded-lg hover:bg-blue-700 transition"
                 >
-                  Vendeurs
+                  Vendeur
                 </button>
               </Link>
               <Link href="/tickets" className="flex-1">
@@ -97,7 +97,7 @@ function Header() {
                   className=" w-full bg-[#F37021] text-gray-800 px-3 py-1.5 text-sm
               rounded-lg hover:bg-gray-200 transition border border-gray-300"
                 >
-                  Billets
+                 Mes Billets
                 </button>
               </Link>
           </SignedIn>

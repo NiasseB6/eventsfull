@@ -50,12 +50,12 @@ export default function TicketCard({ ticketId }: { ticketId: Id<"tickets"> }) {
               {ticket.event.name}
             </h3>
             <p className="text-sm text-gray-500 mt-1">
-              Purchased on {new Date(ticket.purchasedAt).toLocaleDateString()}
+              Acheter le {new Date(ticket.purchasedAt).toLocaleDateString()}
             </p>
             {ticket.event.is_canceled && (
               <p className="text-sm text-red-600 mt-1 flex items-center gap-1">
                 <AlertTriangle className="w-4 h-4" />
-                Event Cancelled
+                Évènement annulé
               </p>
             )}
           </div>
@@ -74,7 +74,7 @@ export default function TicketCard({ ticketId }: { ticketId: Id<"tickets"> }) {
             {isPastEvent && !ticket.event.is_canceled && (
               <span className="flex items-center gap-1 text-xs text-gray-500">
                 <Clock className="w-3 h-3" />
-                Past Event
+                Évènement passés
               </span>
             )}
           </div>
@@ -107,10 +107,10 @@ export default function TicketCard({ ticketId }: { ticketId: Id<"tickets"> }) {
                   : "text-blue-600"
             }`}
           >
-            £{ticket.event.price.toFixed(2)}
+            {ticket.event.price.toFixed(2)} FCFA
           </span>
           <span className="text-gray-600 flex items-center">
-            View Ticket <ArrowRight className="w-4 h-4 ml-1" />
+            Voir ton billet <ArrowRight className="w-4 h-4 ml-1" />
           </span>
         </div>
       </div>

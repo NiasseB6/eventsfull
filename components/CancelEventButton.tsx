@@ -22,7 +22,7 @@ export default function CancelEventButton({
   const handleCancel = async () => {
     if (
       !confirm(
-        "Are you sure you want to cancel this event? All tickets will be refunded and the event will be cancelled permanently."
+       "Êtes-vous sûr de vouloir annuler cet événement ? Tous les billets seront remboursés et l’événement sera annulé définitivement."
       )
     ) {
       return;
@@ -33,7 +33,7 @@ export default function CancelEventButton({
       await refundEventTickets(eventId);
       await cancelEvent({ eventId });
       toast(
-        "All tickets have been refunded successfully.",
+        "Tous les billets ont été remboursés avec succès.",
       );
       router.push("/seller/events");
     } catch (error) {

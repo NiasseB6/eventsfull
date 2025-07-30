@@ -113,7 +113,7 @@ function EventPage() {
                     Information sur l'évènement
                   </h3>
                   <ul className="space-y-2 text-blue-700">
-                    <li>• Venez 30 minutes avant que l'évènement commence</li>
+                    <li>• Venez 30 minutes avant que l'évènement ne commence</li>
                     <li>• Le ticket est non remboursable</li>
                   </ul>
                 </div>

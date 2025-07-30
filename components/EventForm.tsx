@@ -265,8 +265,8 @@ function EventForm({ mode, initialData }: EventFormProps) {
                 <FormLabel>Prix par ticket</FormLabel>
                 <FormControl>
                   <div className="relative">
-                    <span className="absolute left-2 top-1/2 -translate-y-1/2">
-                      £
+                    <span className="absolute right-135 top-1/2 -translate-y-1/2">
+                      FCFA
                     </span>
                     <Input
                       type="number"

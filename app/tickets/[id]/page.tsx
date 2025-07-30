@@ -46,9 +46,9 @@ export default function TicketPage() {
               className="flex items-center text-gray-600 hover:text-gray-900 transition-colors"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to My Tickets
+              Retour
             </Link>
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <button className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors rounded-lg hover:bg-gray-100">
                 <Download className="w-4 h-4" />
                 <span className="text-sm">Save</span>
@@ -57,7 +57,7 @@ export default function TicketPage() {
                 <Share2 className="w-4 h-4" />
                 <span className="text-sm">Share</span>
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* Event Info Summary */}
@@ -82,13 +82,12 @@ export default function TicketPage() {
                 {ticket.event.is_canceled ? "Cancelled" : "Valid Ticket"}
               </span>
               <span className="text-sm text-gray-500">
-                Purchased on {new Date(ticket.purchasedAt).toLocaleDateString()}
+                Acheté le {new Date(ticket.purchasedAt).toLocaleDateString()}
               </span>
             </div>
             {ticket.event.is_canceled && (
               <p className="mt-4 text-sm text-red-600">
-                This event has been cancelled. A refund will be processed if it
-                hasn&apos;t been already.
+                Cet événement a été annulé. Un remboursement sera effectué s'il ne l'a pas encore été.
               </p>
             )}
           </div>
@@ -110,7 +109,7 @@ export default function TicketPage() {
               ticket.event.is_canceled ? "text-red-900" : "text-blue-900"
             }`}
           >
-            Need Help?
+           Besoin d'aide ?
           </h3>
           <p
             className={`mt-1 text-sm ${
@@ -118,8 +117,8 @@ export default function TicketPage() {
             }`}
           >
             {ticket.event.is_canceled
-              ? "For questions about refunds or cancellations, please contact our support team at digitalfull.contact@gmail.com"
-              : "If you have any issues with your ticket, please contact our support team at digitalfull.contact@gmail.com"}
+              ? "Pour toute question concernant les remboursements ou les annulations, veuillez contacter notre équipe d’assistance à l’adresse suivante : digitalfull.contact@gmail.com"
+              : "Si vous rencontrez un problème avec votre billet, veuillez contacter notre équipe d’assistance à l’adresse suivante : digitalfull.contact@gmail.com"}
           </p>
         </div>
       </div>
